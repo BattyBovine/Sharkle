@@ -7,6 +7,7 @@
 #include <QSoundEffect>
 #include <QMouseEvent>
 #include <QTimer>
+#include <QTime>
 
 class SharkleView : public QGraphicsView
 {

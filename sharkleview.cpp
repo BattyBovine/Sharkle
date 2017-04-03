@@ -35,6 +35,8 @@ SharkleView::SharkleView(QWidget *parent) : QGraphicsView(parent)
 	this->iCurrentAnim = 0;
 	this->iCurrentFrame = 0;
 
+	qsrand((uint)QTime::currentTime().msec());
+
 	connect(&this->tFrameTimer,SIGNAL(timeout()),this,SLOT(nextFrame()));
 	this->tFrameTimer.start(100);
 	this->nextFrame();
