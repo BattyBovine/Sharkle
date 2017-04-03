@@ -1,0 +1,31 @@
+<RCC>
+	<qresource prefix="/sfx">
+		<file alias="0">res/0.wav</file>
+		<file alias="1">res/1.wav</file>
+		<file alias="2">res/2.wav</file>
+		<file alias="3">res/3.wav</file>
+		<file alias="4">res/4.wav</file>
+		<file alias="5">res/5.wav</file>
+		<file alias="6">res/6.wav</file>
+		<file alias="7">res/7.wav</file>
+	</qresource>
+	<qresource prefix="/img">
+		<file alias="icon">res/sharkle.ico</file>
+		<file alias="sharkle/00">res/sharkle/00.svg</file>
+		<file alias="sharkle/01">res/sharkle/01.svg</file>
+		<file alias="sharkle/02">res/sharkle/02.svg</file>
+		<file alias="sharkle/03">res/sharkle/03.svg</file>
+		<file alias="sharkle/04">res/sharkle/04.svg</file>
+		<file alias="sharkle/05">res/sharkle/05.svg</file>
+		<file alias="sharkle/06">res/sharkle/06.svg</file>
+		<file alias="sharkle/07">res/sharkle/07.svg</file>
+		<file alias="sharkle/08">res/sharkle/08.svg</file>
+		<file alias="sharkle/09">res/sharkle/09.svg</file>
+		<file alias="sharkle/10">res/sharkle/10.svg</file>
+		<file alias="sharkle/11">res/sharkle/11.svg</file>
+		<file alias="sharkle/12">res/sharkle/12.svg</file>
+		<file alias="sharkle/13">res/sharkle/13.svg</file>
+		<file alias="sharkle/14">res/sharkle/14.svg</file>
+		<file alias="sharkle/15">res/sharkle/15.svg</file>
+	</qresource>
+</RCC>
