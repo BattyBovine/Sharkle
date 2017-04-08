@@ -22,6 +22,7 @@ public:
 	~Sharkle();
 
 public slots:
+	void resizeSharkle();
 	void exitApplication();
 
 private:
