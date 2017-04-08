@@ -6,6 +6,7 @@
 #include <QGraphicsSvgItem>
 #include <QSoundEffect>
 #include <QMouseEvent>
+#include <QMessageBox>
 #include <QTimer>
 #include <QTime>
 
@@ -14,7 +15,6 @@ class SharkleView : public QGraphicsView
 	Q_OBJECT
 public:
 	SharkleView(QWidget *parent = 0);
-	~SharkleView();
 
 protected:
 	void resizeEvent(QResizeEvent*);
@@ -32,6 +32,7 @@ private:
 	quint8 iCurrentAnim;
 	quint8 iCurrentFrame;
 	QTimer tFrameTimer;
+	quint8 iFPS;
 	QList<int> lPrevRands;
 };
 

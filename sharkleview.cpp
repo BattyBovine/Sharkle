@@ -26,28 +26,20 @@ SharkleView::SharkleView(QWidget *parent) : QGraphicsView(parent)
 	}
 
 	for(int i=0; i<8; i++) {
-		QSoundEffect *sfx = new QSoundEffect();
+		QSoundEffect *sfx = new QSoundEffect(this);
 		sfx->setSource(QUrl::fromLocalFile(":/sfx/"+QString::number(i)));
 		sfx->setLoopCount(1);
 		this->lSfx.append(sfx);
 	}
 
-	this->iCurrentAnim = 0;
-	this->iCurrentFrame = 0;
+	this->iCurrentAnim = this->iCurrentFrame = 0;
+	this->iFPS = 10;
 
 	qsrand((uint)QTime::currentTime().msec());
 
 	connect(&this->tFrameTimer,SIGNAL(timeout()),this,SLOT(nextFrame()));
-	this->tFrameTimer.start(100);
+	this->tFrameTimer.start(1000/this->iFPS);
 	this->nextFrame();
-}
-
-SharkleView::~SharkleView()
-{
-	for(int i=0; i<this->lSfx.length(); i++) {
-		if(this->lSfx[i]!=0)
-			delete this->lSfx[i];
-	}
 }
 
 
